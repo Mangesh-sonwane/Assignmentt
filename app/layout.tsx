@@ -5,7 +5,7 @@ export const metadata = {
   description: 'This is a Assignment',
 };
 
-const RootLayout = ({ children }) => {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <body>
