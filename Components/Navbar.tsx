@@ -81,7 +81,7 @@ const Navbar = () => {
 
             <div className={'option'}>
               <Image
-                src='/assets/images/mail_inbox.svg'
+                src='/assets/icons/mail_inbox.svg'
                 alt='Mail Inbox'
                 width={24}
                 height={24}

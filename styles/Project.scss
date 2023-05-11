@@ -1,0 +1,125 @@
+.project {
+  padding: 0 2.5rem;
+  margin: 6rem 0;
+
+  @include respond-to($breakpoint-small) {
+    padding: 0 1rem;
+    margin: 4rem 0;
+  }
+
+  @include respond-to($breakpoint-medium) {
+    padding: 0 1.5rem;
+    margin: 5rem 0;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .title {
+      font-size: 25px;
+      font-weight: 700;
+      color: $secondary-heading-color;
+
+      @include respond-to($breakpoint-medium) {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      @include respond-to($breakpoint-small) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .progress-slot {
+    display: flex;
+    flex-direction: column;
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -1em;
+
+      .title {
+        font-size: 16px;
+        color: $sidebar-links-color;
+        font-weight: 400;
+        line-height: 20.25px;
+
+        @include respond-to($breakpoint-small) {
+          font-size: 10px;
+        }
+      }
+      .percnt {
+        font-size: 18px;
+        color: $primary-color;
+        font-weight: 800;
+
+        @include respond-to($breakpoint-small) {
+          font-size: 10px;
+        }
+      }
+    }
+    .dots {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      .item {
+        background: $primary-light;
+        width: 8px;
+        height: 5px;
+
+        &:first-child {
+          background-color: #00b686;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+  .Menu {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ebeb;
+
+    .menuItem {
+      border: 1px solid $primary-border-color-2;
+      padding: 0.75rem;
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      font-size: 16px;
+      font-weight: 700;
+      color: $primary-gray;
+      cursor: pointer;
+
+      &:first-child {
+        color: $primary-color;
+      }
+
+      &:last-child {
+        margin-left: auto;
+
+        @include respond-to($breakpoint-small) {
+          display: none;
+        }
+      }
+
+      @include respond-to($breakpoint-small) {
+        padding: 0.5rem;
+        font-size: 14px;
+      }
+    }
+  }
+}

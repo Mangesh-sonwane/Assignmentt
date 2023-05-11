@@ -3,11 +3,13 @@
 // colors
 $primary-color: #00b686;
 $primary-gray: #657372;
+$primary-light: #d3d7d7;
 $primary-heading-color: #04433b;
 $secondary-heading-color: #233735;
 $sidebar-links-color: #7b8786;
 $primary-background-color: #f2fbf9;
 $primary-border-color: #e9ebeb;
+$primary-border-color-2: #bdc3c2;
 
 // size
 $breakpoint-small: 480px;
@@ -17,6 +19,8 @@ $breakpoint-large: 1024px;
 // Component files
 @import './Navbar.scss';
 @import './Banner.scss';
+@import './Project.scss';
+@import './Cprofile.scss';
 
 :root {
   --max-width: 1100px;
